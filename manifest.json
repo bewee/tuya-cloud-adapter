@@ -1,0 +1,69 @@
+{
+  "author": "Galveston01",
+  "description": "Tuya Smart Life IoT devices support through Tuya Cloud",
+  "gateway_specific_settings": {
+    "webthings": {
+      "exec": "{nodeLoader} {path}",
+      "primary_type": "adapter",
+      "strict_max_version": "*",
+      "strict_min_version": "0.10.0"
+    }
+  },
+  "homepage_url": "https://github.com/Galveston01/tuya-cloud-adapter",
+  "id": "tuya-cloud-adapter",
+  "license": "GPL-3.0",
+  "manifest_version": 1,
+  "name": "Tuya Smart Life",
+  "short_name": "Tuya",
+  "version": "0.1.0",
+
+  "options": {
+    "default": {
+      "userName": "",
+      "password": "",
+      "countryCode": "44",
+      "region": "eu",
+      "bizType": "smart_life",
+      "pollInterval": 10
+    },
+    "schema": {
+      "type": "object",
+      "required": [
+        "userName",
+        "password",
+        "countryCode",
+        "region",
+        "bizType",
+        "pollInterval"
+      ],
+      "properties": {
+        "userName": {
+          "type": "string",
+          "description": "Your SmartLife E-Mail-Address"
+        },
+        "password": {
+          "type": "string",
+          "description": "Your SmartLife Password"
+        },
+        "countryCode": {
+          "type": "integer",
+          "description": "Country calling code"
+        },
+        "region": {
+          "type": "string",
+          "description": "Region",
+          "enum": ["Americas", "Asia", "Europe", "United States"]
+        },
+        "bizType": {
+          "type": "string",
+          "description": "bizType",
+          "enum": ["smart_life", "tuya"]
+        },
+        "pollInterval": {
+          "type": "integer",
+          "description": "Interval in seconds that defines how often to update values"
+        }
+      }
+    }
+  }
+}
