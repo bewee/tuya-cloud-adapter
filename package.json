@@ -3,7 +3,7 @@
   "display_name": "Tuya Smart Life",
   "version": "0.1.0",
   "description": "Tuya Smart Life IoT devices support through Tuya Cloud",
-  "author": "Galveston01",
+  "author": "bewee",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
@@ -14,14 +14,14 @@
     "adapter",
     "tuya"
   ],
-  "homepage": "https://github.com/Galveston01/tuya-cloud-adapter",
+  "homepage": "https://github.com/bewee/tuya-cloud-adapter",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Galveston01/tuya-cloud-adapter.git"
+    "url": "https://github.com/bewee/tuya-cloud-adapter.git"
   },
   "bugs": {
-    "url": "https://github.com/Galveston01/tuya-cloud-adapter/issues"
+    "url": "https://github.com/bewee/tuya-cloud-adapter/issues"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
